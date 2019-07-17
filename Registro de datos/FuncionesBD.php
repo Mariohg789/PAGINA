@@ -47,7 +47,7 @@
 			}
 		} catch (Exception $e) {
 			echo '<script> alert("Fatal Error");</script>' ;
-			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>";
+			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>";
 		}
         return $correo;
 	}

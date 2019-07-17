@@ -23,7 +23,7 @@
 			else
 			{
 				echo '<script> alert("Este Correo ya esta registrado");</script>' ;
-				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>"; 
+				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>"; 
 			}
 		
 		}
