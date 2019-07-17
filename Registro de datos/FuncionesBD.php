@@ -19,7 +19,7 @@
 			if ($statement) 
 			{
 				echo '<script> alert("Registro realizado");</script>' ;
-				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>";
+				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Login/Index.html'>";
 			}
 			else
 			{
