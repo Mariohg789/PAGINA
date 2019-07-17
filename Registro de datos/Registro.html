@@ -1,0 +1,33 @@
+<html>
+    <head><title>Registro</title>
+    <link rel="stylesheet" href="master.css"></head>
+    <body>
+        <div class="registro">
+           <!---<img class="avatar" src="taller_nissan.jpg" alt="logo de Nissan">-->
+            <h1>Registro</h1>
+            <form action="Controlador.php" method="post">
+                <!--registros-->
+                <br>
+               <label for="nombre">Nombre</label> 
+               <input type="text" name = "txtNombre"> 
+               <br>
+                <label for="Apaterno">Apellido paterno</label> 
+                <input type="text" name = "txtApellido" >
+                <br>
+                <label for="Amaterno">Contrasena</label> 
+                <input type="password" name = "txtContrasena" > 
+                <br>
+                <label for="direccion">Dirección</label> 
+                <input type="text" name = "txtDireccion" > 
+                <br>
+                <label for="correo">Correo</label> 
+                <input type="text" name = "txtCorreo" > 
+                <br>
+                <label for="telefono">Telefono</label> 
+                <input type="text" name = "txtTelefono" > 
+
+                <input type="submit" name="btnRegistrar" value="registrar">
+            </form>
+        </div>
+    </body>
+</html>
