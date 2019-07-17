@@ -8,12 +8,11 @@
 		return $conexion;
 	}
 
-	function insertarUsuario($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado)
+	function insertarUsuario($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pEstatus)
 	{
-
 		$conexion = conectarBD();
-		$insert = "insert into Cliente values (?,?,?,?,?,?,?)";
-		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado);
+		$insert = "insert into Cliente values (?,?,?,?,?,?,?,?)";
+		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pstatus);
 		$statement = sqlsrv_query($conexion,$insert,$parametros);
 		try {
 
