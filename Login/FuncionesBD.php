@@ -26,7 +26,7 @@
 		}
         return array($correo,$pass);
 	}
-
+/*
 	function consultaTodo()
 	{
 		$conex = conectarBD();
@@ -70,5 +70,7 @@
 			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= index.html'>";
 		}
 	}
-
+*/
 ?>
+
+45621
