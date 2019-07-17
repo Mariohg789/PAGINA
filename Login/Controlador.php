@@ -16,7 +16,7 @@
 			
 				if (array($correo,$password) == validarUsuario($correo)) 
 				{
-					$consulta = consultaTodo();
+				
 					echo '<script> bienvenido();</script>' ;
 					
 				}
