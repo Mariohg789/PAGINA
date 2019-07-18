@@ -8,6 +8,20 @@
 		return $conexion;
 	}
 
+	function BuscarId($pCorreo)
+	{
+		$conexion = conectarBD();
+		$select = "select Id from Cliente where correo = ?";
+		$parametros= array($pCorreo);
+		$resuaulSet = sqlsrv_query($conexion,$select,$parametros);
+		try{
+
+		}
+		catch()
+		{
+			
+		}
+	}
 
 	function validarUsuario($pCorreo)
 	{

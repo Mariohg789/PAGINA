@@ -19,6 +19,8 @@
 				
 					echo '<script> alert("Bienvenido");</script>' ;
 					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>";
+					session_start();
+					$_SESSION["SessionActiva"] = $_POST['txtUser'];
 					
 				}
 				else
