@@ -8,19 +8,18 @@
 		return $conexion;
 	}
 
-	function insertarUsuario($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado)
+	function insertarUsuario($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pEstatus)
 	{
-
 		$conexion = conectarBD();
-		$insert = "insert into Cliente values (?,?,?,?,?,?,?)";
-		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado);
+		$insert = "insert into Cliente values (?,?,?,?,?,?,?,?)";
+		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pstatus);
 		$statement = sqlsrv_query($conexion,$insert,$parametros);
 		try {
 
 			if ($statement) 
 			{
 				echo '<script> alert("Registro realizado");</script>' ;
-				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>";
+				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Login/Index.html'>";
 			}
 			else
 			{
@@ -48,7 +47,7 @@
 			}
 		} catch (Exception $e) {
 			echo '<script> alert("Fatal Error");</script>' ;
-			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>";
+			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>";
 		}
         return $correo;
 	}

@@ -12,17 +12,18 @@
 			$direccion = $_POST['txtDireccion'];
 			$telefono = $_POST['txtTelefono'];
 			$correo = $_POST['txtCorreo'];
-			$estado = "Activo";
-			$correoValidar = validarUsuarioCorreo($correo);
+			$estado = "Querétaro";
+			$status = "Activo";
+			
 
-			if ($correoValidar != $correo) 
+			if (validarUsuarioCorreo($correo) != $correo) 
 			{
-				insertarUsuario($nombre,$apellido,$contrasena,$direccion,$correo,$telefono,$estado);
+				insertarUsuario($nombre,$apellido,$contrasena,$direccion,$correo,$telefono,$estado,$status);
 			}
 			else
 			{
 				echo '<script> alert("Este Correo ya esta registrado");</script>' ;
-				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>"; 
+				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>"; 
 			}
 		
 		}
