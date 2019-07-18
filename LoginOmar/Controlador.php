@@ -17,12 +17,14 @@
 				if (array($correo,$password) == validarUsuario($correo)) 
 				{
 				
-					echo "Bienvenido" ;
+					echo '<script> alert("Bienvenido");</script>' ;
+					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>";
 					
 				}
 				else
 				{
-					echo "Error" ;	
+					echo '<script> alert("Error al regresar");</script>' ;
+					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>" ;	
 				}
 				
 							
