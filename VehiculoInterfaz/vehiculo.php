@@ -21,12 +21,12 @@
         <nav id="nav" class="nav1">
             <div class="contenedor-nav">
                 <div class="logo">
-                    <img src="img/logo.png" alt="">
+                    <a href="../Menu Principal/Index.html"><img src="img/logo.png" alt=""></a>
                 </div>
                 <div class="enlaces" id="enlaces">
-                    <a href="#" id="enlace-inicio" class="btn-header">Login</a>
-                    <a href="#" id="enlace-equipo" class="btn-header">Registrarse</a>
-                    <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="../LoginOmar/Login.html" id="enlace-inicio" class="btn-header">Login</a>
+                    <a href="../RegistroUsuario/Registro.html" id="enlace-equipo" class="btn-header">Registrarse</a>
+                    <a href="../Servicios/servicios.html" id="enlace-servicio" class="btn-header">Servicios</a>
                     <a href="#" id="enlace-trabajo" class="btn-header">Trabajos</a>
                     <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
                 </div>
