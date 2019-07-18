@@ -12,7 +12,7 @@
 			$direccion = $_POST['txtDireccion'];
 			$telefono = $_POST['txtTelefono'];
 			$correo = $_POST['txtCorreo'];
-			$estado = "Querétaro";
+			$estado = $_POST['txtEstado'];
 			$status = "Activo";
 			
 

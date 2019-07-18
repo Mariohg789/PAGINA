@@ -27,28 +27,30 @@
         <div class="registro">
            <!---<img class="avatar" src="taller_nissan.jpg" alt="logo de Nissan">-->
             <h1>Registro</h1>
-            <form>
+            <form action="Controlador.php" method="post">
                 <!--registros-->
                 <br>
                <label for="nombre">Nombre</label> 
-               <input type="text" placeholder="Juan"> 
+               <input type="text" name="txtNombre" placeholder="Juan"> 
                <br>
                 <label for="Apaterno">Apellido paterno</label> 
-                <input type="text" placeholder="Gonzalez">
+                <input type="text" name="txtApellido" placeholder="Gonzalez">
                 <br>
-                <label for="Amaterno">Apellido materno</label> 
-                <input type="text" placeholder="Morales"> 
+                <label for="Contrasena">Contrasena</label> 
+                <input type="password" name="txtContrasena" > 
                 <br>
                 <label for="direccion">Dirección</label> 
-                <input type="text" placeholder="calle, numero, col"> 
+                <input type="text" name="txtDireccion" placeholder="calle, numero, col"> 
                 <br>
                 <label for="correo">Correo</label> 
-                <input type="text" placeholder="ejemplo@gmail.com"> 
+                <input type="text" name="txtCorreo" placeholder="ejemplo@gmail.com"> 
                 <br>
                 <label for="telefono">Telefono</label> 
-                <input type="text" placeholder="(442) 123456"> 
-
-                <input type="submit" value="registrar">
+                <input type="text" name="txtTelefono" placeholder="(442) 123456"> 
+                <br>
+                <label for="estado">Estado/Provincia</label> 
+                <input type="text" name="txtEstado" placeholder="CDMX"> 
+                <input type="submit" name="btnRegistrar" value="registrar">
             </form>
         </div>
         <script src="js/jquery.js"></script>

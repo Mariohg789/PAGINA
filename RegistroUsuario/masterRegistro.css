@@ -27,6 +27,7 @@ body{
     transform: translate(-50%, -50%); /* equis, y*/
     box-sizing: border-box;
     padding: 70px 30px; 
+    background-position: stikic;
 }
 .registro h1 {
     margin: 0;
@@ -55,6 +56,17 @@ body{
     color: #ffffff; 
     font-size: 16px; 
 }
+
+.registro input[type="password"]{
+  border: none;
+  border-bottom: 1px solid #ffffff; 
+  background: transparent; 
+  outline: none; 
+  height: 40px;
+  color: #ffffff; 
+  font-size: 16px; 
+}
+
 .registro input[type="submit"]{
         border: none; 
         outline: none;
