@@ -8,11 +8,11 @@
 		return $conexion;
 	}
 
-	function insertarUsuario($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pEstatus)
+	function insertarVehiculo($pSerie,$pModelo,$pAnio,$pMarca,$pVersion,$pPlaca)
 	{
 		$conexion = conectarBD();
-		$insert = "insert into Cliente values (?,?,?,?,?,?,?,?)";
-		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pstatus);
+		$insert = "insert into vehiculo values (?,?,?,?,?,?)";
+		$parametros=array($pSerie,$pModelo,$pAnio,$pMarca,$pVersion,$pPlaca);
 		$statement = sqlsrv_query($conexion,$insert,$parametros);
 		try {
 
@@ -35,21 +35,21 @@
 		return 1;
 	}
 
-	function validarUsuarioCorreo($pCorreo)
+	function validarVehiculo($pSerie)
 	{
 		$conexion = conectarBD();
-		$select = "select Correo from Cliente where Correo = ?";
+		$select = "select Serie from vehiculo where serie = ?";
 		$parametros =array($pCorreo);
 		$statement = sqlsrv_query($conexion,$select,$parametros);
 		try {
 			while ($arrayCorreo = sqlsrv_fetch_array($statement)) {
-				$correo = $arrayCorreo['Correo'];
+				$serie = $arrayCorreo['Serie'];
 			}
 		} catch (Exception $e) {
 			echo '<script> alert("Fatal Error");</script>' ;
 			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>";
 		}
-        return $correo;
+        return $serie;
 	}
 
 ?>
