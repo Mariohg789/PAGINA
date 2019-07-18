@@ -5,7 +5,7 @@
     <?php
         session_start();
         if (!isset($_SESSION["SessionActiva"])) {
-            header("Location:index.html");
+            header("Location:../Menu Principal/index.html");
         }
     ?>
     <head>
