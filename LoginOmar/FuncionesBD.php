@@ -22,7 +22,7 @@
 			}
 		} catch (Exception $e) {
 			echo '<script> alert("Fatal Error");</script>' ;
-			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= index.html'>";
+			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= LoginOmar/Login.html'>";
 		}
         return array($correo,$pass);
 	}

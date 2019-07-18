@@ -17,12 +17,12 @@
 				if (array($correo,$password) == validarUsuario($correo)) 
 				{
 				
-					echo '<script> bienvenido();</script>' ;
+					echo "Bienvenido" ;
 					
 				}
 				else
 				{
-					echo '<script> erroLogin();</script>' ;	
+					echo "Error" ;	
 				}
 				
 							
