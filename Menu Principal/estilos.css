@@ -84,12 +84,7 @@ img{
   }
 }
 
-/* Header 
-background: linear-gradient(to bottom,
-  rgba(211,135,20, .6),
-  rgba(29,241,171, .6),
-  rgba(7,109,150, .45)
-  ), url(img/fondo.jpg);*/
+
 
 header{
   width: 100%;
