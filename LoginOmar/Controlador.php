@@ -4,7 +4,7 @@
 	<head>...</head>
 
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-            <script src="../mensajes_alertas_js/mensajes.js"></script>
+            <script src="../JS/mensajes.js"></script>
 	<BODY>
 		<?php
 			require 'FuncionesBD.php';
@@ -17,14 +17,14 @@
 				if (array($correo,$password) == validarUsuario($correo)) 
 				{
 				
-					echo '<script> bienvenido();</script>' ;
+					echo '<script> alert("Bienvenido");</script>' ;
 					session_start();
 					$_SESSION["SessionActiva"] = buscarId($_POST['txtUserName']);
 					
 				}
 				else
 				{
-					echo '<script> erroLogin();</script>' ;	
+					echo '<script> alert("Error al regresar");</script>' ;	
 				}
 				
 							
