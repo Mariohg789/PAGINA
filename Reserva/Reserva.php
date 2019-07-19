@@ -7,8 +7,13 @@
       <body class="hidden">
       <?php
             if (!isset($_SESSION["SessionActiva"])) {
-                if($_SESSION["SessionActiva"]!= 1)
-                header("Location:../Menu Principal/index.html");
+                
+                    header("Location:../Menu Principal/index.html");
+ 
+            }
+            else
+            {
+                header("Location:Reserva.php");
             }
        ?>
         <div class="centrado" id="onload">
