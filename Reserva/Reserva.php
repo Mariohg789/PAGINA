@@ -6,7 +6,6 @@
       <!--Menu-->
       <body class="hidden">
       <?php
-            session_start();
             if (!isset($_SESSION["SessionActiva"])) {
                 header("Location:../Menu Principal/index.html");
             }
