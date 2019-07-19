@@ -1,4 +1,4 @@
-//Resgistro cliente
+//Resgistro cliente *
 function resgitroCliente()
 {
   Swal.fire({
@@ -9,7 +9,7 @@ function resgitroCliente()
     timer: 2000
   }).then(function(){window.location="#"})
 }
-//Error de cliente
+//Error de cliente*
 function errorCliente()
 {
   Swal.fire({
@@ -20,7 +20,7 @@ function errorCliente()
     timer: 2000
   }).then(function(){window.location=""})
 }
-//Bienvenido 
+//Bienvenido *
 function bienvenido()
 {
   Swal.fire({
@@ -32,7 +32,7 @@ function bienvenido()
   }).then(function(){window.location="../Menu Principal/Index.html"})
 
 } 
-//Error al entrada 
+//Error al entrada *
 function erroLogin()
 {
     Swal.fire('MARVAN MECHANIC´S',
