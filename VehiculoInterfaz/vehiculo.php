@@ -4,7 +4,11 @@
 <body>
     <?php
         session_start();
-        if (!isset($_SESSION["SessionActiva"])) {
+        if (isset($_SESSION["SessionActiva"])) {
+            if($_SESSION["SessionActiva"] ¡= )
+            {
+
+            }
             header("Location:../Menu Principal/index.html");
         }
     ?>
