@@ -120,6 +120,7 @@ nav{
 }
 
 .contenedor-nav{
+  
   display: flex;
   margin: auto;
   width: 90%;
@@ -418,4 +419,7 @@ footer p{
   .iconos{
     margin: auto;
   }
+}
+.galeria-work{
+  padding-top: 10%;
 }
