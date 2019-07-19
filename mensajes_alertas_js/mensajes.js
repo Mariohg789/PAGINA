@@ -15,7 +15,7 @@ function errorCliente()
   Swal.fire({
     position: 'top',
     type: 'error',
-    title: 'Usuario no registrado',
+    title: 'el usuario y/o contraseña son incorrectos',
     showConfirmButton: false,
     timer: 2000
   }).then(function(){window.location=""})
