@@ -18,7 +18,7 @@ function errorCliente()
     title: 'Usuario no registrado',
     showConfirmButton: false,
     timer: 2000
-  }).then(function(){window.location="#"})
+  }).then(function(){window.location=""})
 }
 //Bienvenido 
 function bienvenido()
@@ -29,13 +29,16 @@ function bienvenido()
     title: 'Bienvenido',
     showConfirmButton: false,
     timer: 2000
-  }).then(function(){window.location="#"})
+  }).then(function(){window.location="../Menu Principal/Index.html"})
 
 } 
 //Error al entrada 
 function erroLogin()
 {
-    Swal.fire('MARVAN MECHANIC´S', 'Tu usuario y/o contraseña no validos', 'error').then(function(){window.location="#"});
+    Swal.fire('MARVAN MECHANIC´S',
+     'Tu usuario y/o contraseña no validos', 
+     'error').then(function()
+     {window.location="../Menu Principal/Index.html"});
 
 }
 //Modificar Datos 

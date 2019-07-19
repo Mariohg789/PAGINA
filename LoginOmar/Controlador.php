@@ -18,15 +18,13 @@
 				{
 				
 					echo '<script> bienvenido();</script>' ;
-					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>";
 					session_start();
-					$_SESSION["SessionActiva"] = buscarId($_POST['txtUser']);
+					$_SESSION["SessionActiva"] = buscarId($_POST['txtUserName']);
 					
 				}
 				else
 				{
-					echo '<script> erroLogin();</script>' ;
-					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>" ;	
+					echo '<script> erroLogin();</script>' ;	
 				}
 				
 							
