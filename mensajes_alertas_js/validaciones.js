@@ -97,7 +97,7 @@ function campoVaciosRegistroUsuario()
 			return 0;
 		}
 		//PLACA
-		if()
+		if(campoVacioPlaca=="")
 		{
 			Swal.fire('Campo vacío','Ingresa una placa','question');
 			return 0;
