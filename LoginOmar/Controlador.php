@@ -18,13 +18,11 @@
 				{
 				
 					echo '<script> alert("Bienvenido");</script>' ;
-					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>";
 					
 				}
 				else
 				{
-					echo '<script> alert("Error al regresar");</script>' ;
-					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../Menu Principal/Index.html'>" ;	
+					echo '<script> alert("Error al regresar");</script>' ;	
 				}
 				
 							

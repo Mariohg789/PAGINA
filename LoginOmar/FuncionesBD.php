@@ -8,6 +8,23 @@
 		return $conexion;
 	}
 
+	function BuscarId($pCorreo)
+	{
+		$conexion = conectarBD();
+		$select = "select Id from Cliente where correo = ?";
+		$parametros= array($pCorreo);
+		$resuaulSet = sqlsrv_query($conexion,$select,$parametros);
+		try {
+			while($arrayId = sqlsrv_fetch_array($resuaulSet))
+			{
+				$id = $arrayId['Id'];
+				return $id;
+			}
+		} catch (Exception $e) {
+			echo '<script> alert("Error de USUARIO");</script>' ;
+			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= LoginOmar/Login.html'>";
+		}
+	}
 
 	function validarUsuario($pCorreo)
 	{
