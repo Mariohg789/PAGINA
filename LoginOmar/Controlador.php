@@ -17,7 +17,7 @@
 				if (array($correo,$password) == validarUsuario($correo)) 
 				{
 				
-					echo '<script> alert("Bienvenido");</script>' ;
+					echo '<script> bienvenido();</script>' ;
 					
 				}
 				else
