@@ -29,7 +29,7 @@ function bienvenido()
     title: 'Bienvenido',
     showConfirmButton: false,
     timer: 2000
-  }).then(function(){window.location="../Menu Principal/Index.html"})
+  }).then(function(){window.location="../MenuLoggeado/IndexLogeado.html"})
 
 } 
 //Error al entrada 
