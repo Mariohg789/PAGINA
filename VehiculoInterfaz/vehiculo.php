@@ -2,16 +2,6 @@
 <head><title>Registro Vehiculo</title></head>
 <link rel="stylesheet" href="master.css"></head>
 <body>
-    <?php
-        session_start();
-        if (isset($_SESSION["SessionActiva"])) {
-            if($_SESSION["SessionActiva"] ¡= )
-            {
-
-            }
-            header("Location:../Menu Principal/index.html");
-        }
-    ?>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

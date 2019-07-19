@@ -5,17 +5,6 @@
    
       <!--Menu-->
       <body class="hidden">
-      <?php
-            if (!isset($_SESSION["SessionActiva"])) {
-                
-                    header("Location:../Menu Principal/index.html");
- 
-            }
-            else
-            {
-                header("Location:Reserva.php");
-            }
-       ?>
         <div class="centrado" id="onload">
             <div class="lds-facebook"><div></div><div></div><div></div></div>
         </div>

@@ -18,8 +18,6 @@
 				{
 				
 					echo '<script> alert("Bienvenido");</script>' ;
-					session_start();
-					$_SESSION["SessionActiva"] = buscarId($_POST['txtUserName']);
 					
 				}
 				else
