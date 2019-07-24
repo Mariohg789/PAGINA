@@ -8,16 +8,16 @@
 		return $conexion;
 	}
 
-	function BuscarId($pCorreo)
+	function buscarCorreo($pCorreo)
 	{
 		$conexion = conectarBD();
-		$select = "select Id from Cliente where correo = ?";
+		$select = "select correo from Cliente where correo = ?";
 		$parametros= array($pCorreo);
 		$resuaulSet = sqlsrv_query($conexion,$select,$parametros);
 		try {
 			while($arrayId = sqlsrv_fetch_array($resuaulSet))
 			{
-				$id = $arrayId['Id'];
+				$id = $arrayId['Correo'];
 				return $id;
 			}
 		} catch (Exception $e) {
