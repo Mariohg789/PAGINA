@@ -41,27 +41,29 @@
         <img class="avatar" src="img/Carro.gif" alt="imagen">    
     </div>
 <div class="Vehiculo">
-<form name="Vehiculo" method="post">
+<form name="Vehiculo" method="post" onsubmit="return campoVaciosVehículo();">
 <label for="Serie">Numero de serie</label>
-<input type="text" name="txtNumeroSerie" placeholder="JHLRD7787********">
+<input type="text" name="txtNumeroSerie" id="txtNumeroSerie" placeholder="JHLRD7787********">
 <br>
 <label for="Modelo">Modelo del Vehiculo</label>
-<input type="text" name="txtModelo" placeholder="Example">
+<input type="text" name="txtModelo" id="txtModelo" placeholder="Example">
 <br>
 <label for="Año">Anio</label>
-<input type="text" name="txtAnio" placeholder="2019">
+<input type="text" name="txtAnio" id="txtAnio" placeholder="2019">
 <br>
 <label for="Marca">Marca</label>
-<input type="text" name="txtMarca" placeholder="Audi">
+<input type="text" name="txtMarca" id="txtMarca" placeholder="Audi">
 <br>
 <label for="Version">Version</label>
-<input type="text" name="txtVersion" placeholder="ETC">
+<input type="text" name="txtVersion" id="txtVersion" placeholder="ETC">
 <br>
 <label for="Placa">Numero de placas</label>
-<input type="text" name="txtPlacas" placeholder="ADJ85">
+<input type="text" name="txtPlacas" id="s" placeholder="ADJ85">
 <br>
 <input type="submit" name="btnAgregarVehiculo" value="Ingresar Vehiculo">
 </form>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="JS/validaciones.js"></script>
 </body>
 </html>

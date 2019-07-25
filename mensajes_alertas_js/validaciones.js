@@ -1,8 +1,8 @@
 //ALERTAS DE LOGIN 
 function campoVaciosLogin()
     {
-        var usuarioLogin= document.getElementById(" ").value; 
-        var coLogin= document.getElementById(" ").value; 
+        var usuarioLogin= document.getElementById("txtUserName").value; 
+        var coLogin= document.getElementById("txtPassword").value; 
         if(usuarioLogin==="" && coLogin=="")
         {
            // alert("Campo vacio: escribe un usuario");
@@ -22,52 +22,19 @@ function campoVaciosLogin()
             return false; 
         }
     }
-	//ALERTA DE REGISTRO USUARIO
-function campoVaciosRegistroUsuario()
-    {
-        var nombreRUsuario= document.getElementById(" ").value; 
-        var contrasenaRU1=document.getElementById(" ").value;
-        var contrasenaRU2=document.getElementById(" ").value;
-		//TODOS LOS CAMPOS
-        if(nombreRUsuario==="" && contrasenaRU1==="" && contrasenaRU2==="")
-        {
-       
-            Swal.fire('Campo vacío','Ingresa algún campo','warning');
-            return false; 
-        }
-		//USUARIO
-        if(nombreRUsuario==="")
-        {
-       
-           Swal.fire('Campo vacío','Ingresa un nombre de usuario','warning'); 
-            return false; 
-        }
-		//CONTRASENIA 1
-        if(contrasenaRU1==="")
-        {
-        
-           Swal.fire('Campo vacío','Ingresa una contraseña','warning');
-            return false; 
-        }
-		// CONFIRMAR CONTRASENIA 
-        if(contrasenaRU2==="")
-        {
-         
-           Swal.fire('Campo vacío','Las Contraseñas no coinciden','warning');
-            return false; 
-        }
-    }
+	
 	
 	//ALERTA PARA CAMPOS VEHICULO
 	function campoVaciosVehículo()
 	{
-		var campoVacioSerie= document.getElementById(" ").value; 
-		var campoVacioSerieModelo= document.getElementById(" ").value; 
-		var campoVacioAnio= document.getElementById(" ").value; 
-		var campoVacioVersion= document.getElementById(" ").value; 
-		var campoVacioPlaca= document.getElementById(" ").value; 
+		var campoVacioSerie= document.getElementById("txtNumeroSerie").value; 
+		var campoVacioSerieModelo= document.getElementById("txtModelo").value; 
+		var campoVacioAnio= document.getElementById("txtAnio").value; 
+		var campoVacioMarca=document.getElementById("txtMarca").value;
+		var campoVacioVersion= document.getElementById("txtVersion").value; 
+		var campoVacioPlaca= document.getElementById("txtPlacas").value; 
 		//TODOS LOS CAMPOS
-		if (campoVacioSerie==="" && campoVacioSerieModelo==="" && campoVacioAnio==="" && campoVacioVersion==="" && campoVacioPlaca==="")
+		if (campoVacioSerie==="" && campoVacioSerieModelo==="" && campoVacioAnio==="" && campoVacioMarca==="" && campoVacioVersion==="" && campoVacioPlaca==="")
 		{
 			Swal.fire('No hay datos!','Ingresa los datos correspondientes','warning');
             return false; 
@@ -87,17 +54,23 @@ function campoVaciosRegistroUsuario()
 		//ANIO
 		if(campoVacioAnio==="")
 		{
+			Swal.fire('Campo vacío','Ingresa un Año','question');
+			return 0;
+		}
+		//Marca
+		if(campoVacioMarca==="")
+		{
 			Swal.fire('Campo vacío','Ingresa una marca','question');
 			return 0;
 		}
 		//VERSION
 		if(campoVacioVersion==="")
 		{
-			Swal.fire('Campo vacío','Ingresa una versió','question');
+			Swal.fire('Campo vacío','Ingresa una versión','question');
 			return 0;
 		}
 		//PLACA
-		if()
+		if(campoVacioPlaca==="")
 		{
 			Swal.fire('Campo vacío','Ingresa una placa','question');
 			return 0;
@@ -107,15 +80,15 @@ function campoVaciosRegistroUsuario()
 		//CAMPOS VACIOS DE CLIENTE
 		function campoVaciosCliente()
 		{
-			var campoVacioNombre= document.getElementById(" ").value; 
-			var campoVacioDireccion= document.getElementById(" ").value; 
-			var campoVacioTelefono= document.getElementById(" ").value; 
-			var campoVacioCorreo= document.getElementById(" ").value; 
-			var campoVacioEstado= document.getElementById(" ").value;
-			var campoVacioAPaterno= document.getElementById(" ").value; 
-			var campoVacioAMaterno= document.getElementById(" ").value; 
+			var campoVacioNombre= document.getElementById("txtNombre").value; 
+			var campoVacioDireccion= document.getElementById("txtDireccion").value; 
+			var campoVacioTelefono= document.getElementById("txtTelefono").value; 
+			var campoVacioCorreo= document.getElementById("txtCorreo").value; 
+			var campoVacioEstado= document.getElementById("txtEstado").value;
+			var campoVacioAPaterno= document.getElementById("txtApellido").value; 
+			var campoVacioContraCliente= document.getElementById("txtContrasena").value; 
 			//TODOS LOS CAMPOS
-			if(campoVacioNombre==="" && campoVacioDireccion==="" && campoVacioTelefono==="" && campoVacioCorreo==="" && campoVacioEstado==="" && campoVacioAPaterno==="" && campoVacioAMaterno==="")
+			if(campoVacioNombre==="" && campoVacioDireccion==="" && campoVacioTelefono==="" && campoVacioCorreo==="" && campoVacioEstado==="" && campoVacioAPaterno==="" && campoVacioContraCliente==="")
 			{
 				Swal.fire('No hay datos!','Ingresa los datos correspondientes','warning');
 				return false; 
@@ -148,7 +121,7 @@ function campoVaciosRegistroUsuario()
 			//ESTADO
 			if(campoVacioEstado==="")
 			{
-				Swal.fire('Campo vacío','Ingresa un Estado','question');
+				Swal.fire('Campo vacío','Ingresa un Estado de provincia','question');
 				return 0;
 				
 			}
@@ -160,9 +133,9 @@ function campoVaciosRegistroUsuario()
 				
 			}
 			//APELLIDO MATERNO
-			if(campoVacioAMaterno==="")
+			if(campoVacioContraCliente==="")
 			{
-				Swal.fire('Campo vacío','Ingresa un Apellido Materno','question');
+				Swal.fire('Campo vacío','Ingresa una Contraseña','question');
 				return 0;
 				
 			}
@@ -171,110 +144,18 @@ function campoVaciosRegistroUsuario()
 	//CAMPOS VACIOS DE TALLER RESERVACION
 	function camposVaciosReservación()
 	{
-		var campoVacioFecha= document.getElementById(" ").value;
-		var campoVaciosHora= document.getElementById(" ").value
-		//TODOS LOS CAMPOS
-		if(campoVacioFecha==="" && campoVaciosHora==="")
-		{
-			Swal.fire('No hay datos!','Selecciona los datos correspondientes','warning');
-			return 0;
-		}
-		//FECHA
-		if(campoVacioFecha==="")
-		{
-			Swal.fire('Campo vacío','Ingresa una Fecha','question');
-			return 0;
-		}
-		//HORA
-		if(campoVaciosHora==="")
-		{
-			Swal.fire('Campo vacío','Ingresa una Hora','question')
-			return 0;
-		}
-	}
-
-	//CAMPOS VACIOS DE TABLA TALLER 
-	function campoVaciosTaller()
-	{
-		var campovacioDireccionT= document.getElementById(" ").value;
-		var campoVacioCorreoT= document.getElementById(" ").value;
-		var campoVacioTelefonoT= document.getElementById(" ").value;
-		var campoVacioCapacidad= document.getElementById(" ").value;
+		var campoVacioDia= document.getElementById("bday").value;
 		
-		//TODOS LOS CAMPOS
-		if(campovacioDireccionT==="" && campoVacioCorreoT==="" && campoVacioTelefonoT==="" && campoVacioCapacidad==="")
+		//Dia
+		if(campoVacioDia==="")
 		{
-			Swal.fire('No hay datos!','Ingresa los datos correspondientes','warning');
+			Swal.fire('Campo vacío','Ingresa un Día','question');
 			return 0;
 		}
-		//DIRECCION
-		if(campovacioDireccionT==="")
-		{
-			Swal.fire('Campo vacío','Ingresa una direccion','question');
-			return 0;
-		}
-		//CORREO
-		if(campoVacioCorreoT==="")
-		{
-			Swal.fire('Campo vacío','Ingresa un correo','question');
-			return 0;
-		}
-		//TELEFONO
-		if(campoVacioTelefonoT==="")
-		{
-			Swal.fire('Campo vacío','Ingresa un Teléfono','question');
-			return 0;
-		}
-		//CAPACIDAD
-		if(campoVacioCapacidad==="")
-		{
-			Swal.fire('Campo vacío','Ingresa una Capacidad','question');
-			return 0;
-		}
+		
 	}
 			
-	//CAMPOS VACIOS JEFE-TALLER
 	
-	function campoVaciosJefe()
-	{
-		var campoVacioNombreJefe= document.getElementById(" ").value;
-		var campoVacioAPaternoJefe= document.getElementById(" ").value;
-		var campoVacioAMaternoJefe= document.getElementById(" ").value;
-		var campoVacioCorreoJefe= document.getElementById(" ").value;
-		
-		//TODOS LOS CAMPOS
-		if(campoVacioNombreJefe==="" && campoVacioAPaternoJefe==="" && campoVacioAMaternoJefe==="" && campoVacioCorreoJefe==="")
-		{
-			Swal.fire('No hay datos!','Ingresa los datos correspondientes','warning');
-			return 0;
-		}
-		//NOMBRE
-		if(campoVacioNombreJefe==="")
-		{
-			Swal.fire('Campo vacío','Ingresa un Nombre','question');
-			return 0;
-		}
-		//APELLIDO PATERNO
-		if(campoVacioAPaternoJefe==="")
-		{
-			Swal.fire('Campo vacío','Ingresa un Apellido Paterno','question');
-			return 0;
-		}
-		//APELLIDO MATERNO
-		if(campoVacioAMaternoJefe==="")
-		{
-			Swal.fire('Campo vacío','Ingresa un Apellido Materno','question');
-			return 0;
-		}
-		//CORREO
-		if(campoVacioCorreoJefe==="")
-		{
-			Swal.fire('Campo vacío','Ingresa un correo','question');
-			return 0;
-		}
-	}
-		
-		
 		
 		
 		

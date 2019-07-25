@@ -20,7 +20,7 @@
         <div class="login-box">
             <img class="avatar" src="img/LogoLog.jpg" alt="logo de Nissan">
             <h1>Login Nissan</h1>
-            <form action="Controlador.php" method="post">
+            <form action="Controlador.php" method="post" onsubmit="return campoVaciosLogin();">
                <label for="username">Username</label> 
                <input type="text" placeholder="Enter Username" id="txtUserName"name="txtUserName">
                   <label for="password">Password</label> 
@@ -32,5 +32,7 @@
                   <a href="../RegistroUsuario/Registro.html">Crear cuenta</a>
             </form>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="JS/validaciones.js"></script>
     </body>
 </html>
