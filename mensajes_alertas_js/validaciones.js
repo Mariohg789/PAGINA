@@ -180,7 +180,7 @@ function campoVaciosRegistroUsuario()
 			Swal.fire('No hay datos!','Selecciona los datos correspondientes','warning');
 			return 0;
 		}
-		//FECHA
+		//FECHA 
 		if(campoVacioFecha==="")
 		{
 			Swal.fire('Campo vacío','Ingresa una Fecha','question');
