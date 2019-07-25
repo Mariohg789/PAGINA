@@ -1,6 +1,12 @@
 <html>
    <head><title>Reservacion</title></head>
-   
+   <?php
+        session_start();
+        if (!isset($_SESSION["SesionActiva"])) {
+           
+            header("Location: ../Menu Principal/Index.html"); 
+        }
+    ?>
     <link rel="stylesheet" href="masterR.css"></head>
    
       <!--Menu-->

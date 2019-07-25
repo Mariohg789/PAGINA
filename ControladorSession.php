@@ -8,6 +8,7 @@
     {
         session_start();
         $_SESSION['SesionActiva'] = $pSesion;
+        return $_SESSION['SesionActiva'];
     }
 
     function cerrarSesion()

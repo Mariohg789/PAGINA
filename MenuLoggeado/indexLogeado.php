@@ -11,6 +11,15 @@
         crossorigin="anonymous">
 </head>
 
+    <?php
+        session_start();
+        if (!isset($_SESSION["SesionActiva"])) {
+           
+            header("Location: ../Menu Principal/Index.html"); 
+        }
+        
+    ?>
+
 <body class="hidden">
     <div class="centrado" id="onload">
         <div class="lds-facebook"><div></div><div></div><div></div></div>

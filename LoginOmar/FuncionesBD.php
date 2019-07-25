@@ -17,7 +17,7 @@
 		try {
 			while($arrayCorreo = sqlsrv_fetch_array($resuaulSet))
 			{
-				$correo = $arrayCorreo['Correo'];
+				$correo = $arrayCorreo['correo'];
 				return $correo;
 			}
 		} catch (Exception $e) {
