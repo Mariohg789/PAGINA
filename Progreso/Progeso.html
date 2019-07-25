@@ -1,0 +1,47 @@
+<html>
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="UTF-8">
+          <title>barra de progreso circular Jquery</title>
+          <link rel="stylesheet" href="style.css">
+          <script src="jquery.js"></script>
+          <script src="jquery.knob.js"></script>
+          <script>
+            $(document).ready(function() {
+              //$(".dial").knob();
+              $('.dial').knob({
+                'min':0,
+                'max':100,
+                'width':250,
+                'height':250,
+                'displayInput':true,
+                'fgColor':"#154360",
+                'release':function(v) {$("p").text(v);},
+                'readOnly':true
+              });
+            });
+          </script>
+          <style>
+            .container{
+              margin:0 auto;
+              text-align: center
+            }
+            h1{
+              font-family: 'raleway';
+              font-size:40px;
+              margin-bottom: 100px;
+            }
+          </style>
+        </head>
+    
+        <body>
+          <div class="container">
+            <h1>Progreso del vehiculo</h1>
+            <input type="text" value="70" class="dial">
+            <!-- <input type="text" value="55" class="dial" data-width="200" data-thickness=".32" data-fgColor="#008BE8" data-bgColor="#EEEEEE" data-cursor=false data-displayInput="true" data-readOnly=true > -->
+          </div>
+        
+        </body>
+        </html>
+</html>
