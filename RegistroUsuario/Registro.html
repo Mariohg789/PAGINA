@@ -27,34 +27,37 @@
         <div class="registro">
            <!---<img class="avatar" src="taller_nissan.jpg" alt="logo de Nissan">-->
             <h1>Registro</h1>
-            <form action="Controlador.php" method="post">
+            <form action="Controlador.php" method="post" onsubmith="return campoVaciosCliente();">
                 <!--registros-->
                 <br>
                <label for="nombre">Nombre</label> 
-               <input type="text" name="txtNombre" placeholder="Juan"> 
+               <input type="text" name="txtNombre" id="txtNombre" placeholder="Juan"> 
                <br>
                 <label for="Apaterno">Apellido paterno</label> 
-                <input type="text" name="txtApellido" placeholder="Gonzalez">
+                <input type="text" name="txtApellido" id="txtApellido" placeholder="Gonzalez">
                 <br>
                 <label for="direccion">Dirección</label> 
-                <input type="text" name="txtDireccion" placeholder="calle, numero, col"> 
+                <input type="text" name="txtDireccion" id="txtDireccion" placeholder="calle, numero, col"> 
                 <br>
                 <label for="telefono">Telefono</label> 
-                <input type="text" name="txtTelefono" placeholder="(442) 123456"> 
+                <input type="text" name="txtTelefono" id="txtTelefono" placeholder="(442) 123456"> 
                 <br>
                 <label for="estado">Estado/Provincia</label> 
-                <input type="text" name="txtEstado" placeholder="CDMX"> 
+                <input type="text" name="txtEstado" id="txtEstado" placeholder="CDMX"> 
                 <br>
                 <label for="correo">Correo</label> 
-                <input type="text" name="txtCorreo" placeholder="ejemplo@gmail.com"> 
+                <input type="text" name="txtCorreo" id="txtCorreo" placeholder="ejemplo@gmail.com"> 
                 <label for="Contrasena">Contrasena</label> 
-                <input type="password" name="txtContrasena" placeholder="Contrasena"> 
+                <input type="password" name="txtContrasena" id="txtContrasena" placeholder="Contrasena"> 
                 <br>
-                <input type="submit" name="btnRegistrar" value="registrar">
+                <input type="submit" name="btnRegistrar"  value="registrar">
             </form>
         </div>
         <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtro.js"></script>
+    //Librerias de Sweet Alert
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="JS/validaciones.js"></script>
     </body>
 </html>

@@ -1,10 +1,14 @@
 <html>
-   <head><title>Reservacion</title></head>
-   
+<head><title>Reservacion</title></head>
+
+
+onsubmit="";
+
     <link rel="stylesheet" href="masterR.css"></head>
    
       <!--Menu-->
       <body class="hidden">
+          <form onsubmit="return camposVaciosReservación();">
         <div class="centrado" id="onload">
             <div class="lds-facebook"><div></div><div></div><div></div></div>
         </div>
@@ -35,7 +39,7 @@
                 </select>
                     <h3>Escoge el dia para tu reservacion</h3>
                 <form action="controlador.php">
-                        <input type="date" name="bday">
+                        <input type="date" name="bday" id="bday">
                 </form>
                     <h3>Escoge la hora</h3>
                 <select>
@@ -47,6 +51,7 @@
 
 
           </div>
-
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+          <script src="JS/validaciones.js"></script>
    </body>
 </html>							
