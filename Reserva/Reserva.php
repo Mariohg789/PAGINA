@@ -1,15 +1,16 @@
 <html>
    <head><title>Reservacion</title></head>
-   
+   <?php
+        session_start();
+        if (!isset($_SESSION["SesionActiva"])) {
+           
+            header("Location: ../Menu Principal/Index.html"); 
+        }
+    ?>
     <link rel="stylesheet" href="masterR.css"></head>
    
       <!--Menu-->
       <body class="hidden">
-      <?php
-            if (!isset($_SESSION["SessionActiva"])) {
-                header("Location:../Menu Principal/index.html");
-            }
-       ?>
         <div class="centrado" id="onload">
             <div class="lds-facebook"><div></div><div></div><div></div></div>
         </div>

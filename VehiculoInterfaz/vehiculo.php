@@ -2,16 +2,6 @@
 <head><title>Registro Vehiculo</title></head>
 <link rel="stylesheet" href="master.css"></head>
 <body>
-    <?php
-        session_start();
-        if (isset($_SESSION["SessionActiva"])) {
-            if($_SESSION["SessionActiva"] ¡= )
-            {
-
-            }
-            header("Location:../Menu Principal/index.html");
-        }
-    ?>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +11,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
             crossorigin="anonymous">
     </head>  
+    <?php
+        session_start();
+        if (!isset($_SESSION["SesionActiva"])) {
+           
+            header("Location: ../Menu Principal/Index.html"); 
+            
+        }
+    ?>
     <header>
         <nav id="nav" class="nav1">
             <div class="contenedor-nav">

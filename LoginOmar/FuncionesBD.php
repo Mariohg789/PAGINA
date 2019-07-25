@@ -8,17 +8,17 @@
 		return $conexion;
 	}
 
-	function BuscarId($pCorreo)
+	function buscarCorreo($pCorreo)
 	{
 		$conexion = conectarBD();
-		$select = "select Id from Cliente where correo = ?";
+		$select = "select correo from Cliente where correo = ?";
 		$parametros= array($pCorreo);
 		$resuaulSet = sqlsrv_query($conexion,$select,$parametros);
 		try {
-			while($arrayId = sqlsrv_fetch_array($resuaulSet))
+			while($arrayCorreo = sqlsrv_fetch_array($resuaulSet))
 			{
-				$id = $arrayId['Id'];
-				return $id;
+				$correo = $arrayCorreo['correo'];
+				return $correo;
 			}
 		} catch (Exception $e) {
 			echo '<script> alert("Error de USUARIO");</script>' ;
