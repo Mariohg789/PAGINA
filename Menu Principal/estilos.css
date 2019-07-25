@@ -94,6 +94,8 @@ header{
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  padding-top: 0px;
+  
 }
 
 nav{
@@ -106,6 +108,7 @@ nav{
   background-color: #A9A9A9;
   height: 80px;
   color:#fff;
+  position: fixed;
 }
 
 .nav2{
@@ -123,6 +126,7 @@ nav{
   max-width:1000px;
   height:inherit;
   overflow: hidden;
+  
 }
 
 nav .enlaces a{

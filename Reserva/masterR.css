@@ -1,70 +1,40 @@
 body{
 
-  background: url(img/fondo.jpg) no-repeat center top; 
+  background: url(fondo.jpg) no-repeat center top; 
   font-family: 'open sans';  
   }
-.Registro{
-    width: 320px; 
-    height: 290px;
-    border-radius: 28px 28px 28px 28px;
-    -moz-border-radius: 28px 28px 28px 28px;
-    -webkit-border-radius: 28px 28px 28px 28px;
-    border: 0px solid #000000;
-    /*Sombreado*/
-    -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
-    /*Estilo*/
-    background: rgba(0,0,0,0.6) ;
-    color: #ffffff;
-    top: 52%;
-    left: 50%;
-    position: absolute; 
-    transform: translate(100% ,-50%); /* x, y*/
-    box-sizing: border-box;
-    padding: 30px 30px; 
-    }
-    /*boton*/
-    .Registro input[type="submit"]{
-      border: none; 
-      outline: none;
-      height: 40px;
-      background: #828282;
-      color: #ffffff; 
-      font-size: 18px; 
-      border-radius: 20px; 
-      }
-  /*Menu*/
+
   header{
     width: 100%;
     height:600px;
-    padding-top: 0%;
   
   
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+    padding-top: 0px;
   }
   
   nav{
     width: 100%;
     position: fixed;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
-    padding-top: 0%;
-    background-attachment: fixed;
+    margin-top: -0.7%;
+    margin-left: -7px;
   }
   
   .nav1{
     background-color: #A9A9A9;
     height: 80px;
     color:#fff;
-    padding-top: 0%;
+    padding-top: 0px;
+    
   }
   
   .nav2{
     background: var(--fondo);
     height:100px;
     color:#000;
-    padding-top: 0%;
   }
   
   .contenedor-nav{
@@ -93,58 +63,27 @@ body{
     border-bottom: 3px solid #1498a4;
     transition: 0.6s;
   }
-  
-  .logo, .logo img{ height:80px;}
-  
-  .icono{
-    display:none;
-    font-size: 24px;        
-    padding: 23.5px 20px;
-  }
- /*Imagen*/
- #avatar
- {
- position: center;
- left: 100px; /*x*/
- top: -500px; ;
- width: 300px; height: 300px;
- width: 730px;
-height: 133px;
-line-height: 0px;
-color: transparent; font-size: 50px;
-font-family: 'open sans';
-font-weight: 300;
-text-transform: uppercase;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--ms-transition: all 0.5s ease;
-transition: all 0.5s ease;
- }
- #avatar:hover {
-  line-height: 133px;
-  color: #ffffff;
-  }
-  #avatar img{ float: left;
-  margin: 0 15px;
-  }
- #avatar2
- {
- position: center;
- left: 100px; /*x*/
- top: -499px; ;
- width: 300px; height: 300px;
- width: 730px;
-height: 133px;
-line-height: 0px;
-color: transparent; font-size: 50px;
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-weight: 300;
-text-transform: uppercase;
--webkit-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--ms-transition: all 0.5s ease;
-transition: all 0.5s ease;
- }
-  #avatar2 img{ float: left;
-  margin: 0 15px;
-  }
+  .logo, .logo img{ 
+    height:80px;}
+
+
+
+
+.contenedorPrincipal{
+  margin-top: -400px;
+  margin-left: 220px;
+  position: center;
+  background-color: #1498a4;
+  width: 500px;
+  height: 350;
+  padding-left: 10px;
+  border-radius: 16px;
+}
+
+.contenedorPrincipal h1{
+  text-align: center;
+}
+
+.contenedorPrincipal input .txtServicio{
+  width: 2000px;
+}
