@@ -15,10 +15,10 @@
 		$parametros= array($pCorreo);
 		$resuaulSet = sqlsrv_query($conexion,$select,$parametros);
 		try {
-			while($arrayId = sqlsrv_fetch_array($resuaulSet))
+			while($arrayCorreo = sqlsrv_fetch_array($resuaulSet))
 			{
-				$id = $arrayId['Correo'];
-				return $id;
+				$correo = $arrayCorreo['Correo'];
+				return $correo;
 			}
 		} catch (Exception $e) {
 			echo '<script> alert("Error de USUARIO");</script>' ;
