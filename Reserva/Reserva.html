@@ -1,12 +1,6 @@
 <html>
    <head><title>Reservacion</title></head>
-   <?php
-        session_start();
-        if (!isset($_SESSION["SesionActiva"])) {
-           
-            header("Location: ../Menu Principal/Index.html"); 
-        }
-    ?>
+   
     <link rel="stylesheet" href="masterR.css"></head>
    
       <!--Menu-->
@@ -27,40 +21,32 @@
                         <a href="#" id="enlace-trabajo" class="btn-header">Trabajos</a>
                         <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
                     </div>
-                    <div class="icono" id="open">
-                        <span>&#9776;</span>
-                    </div>
+                
                 </div>
             </nav>
-<!--Imagenes -->
-      
+          </header>
 
-<div id="avatar">
-<img src="img/paq1.jpg">
-<p>Descripcion</p>
-</div>
-<br>
-<div id="avatar">
-    <img src="img/paq2.jpg">
-    <p>Descripcion</p>
-</div>
-<!--Contenido-->
-      <div class="Registro">
-        <h1>Reservacion</h1>
-        <form name="Registro" method="post">
-            <label for="HoraReserva">Seleccione la fecha</label>
-            <br>
-            <input type="date" name="dia">
-            <br>
-            <br>
-          <label for="HoraReserva">Seleccione la hora</label>
-          <br>
-          <input type="time" name="hora">
-          <br>
-          <br>
-          <input type="submit" name="Continuar" value="Continuar">
-          <input type="submit" name="Regresar" value="Regresar">
-        </form>
-      </div>
+          <div class = "ContenedorPrincipal">
+                    <h1>Haz tu reservacion</h1>
+          <input type="text" name="txtServicio" placeholder="El servicio que el cliente eligio">
+                    <h3>A que carro le realizaras el servicio?</h3>
+                <select>
+                     <option value="volvo">Carros de la BD</option>   
+                </select>
+                    <h3>Escoge el dia para tu reservacion</h3>
+                <form action="controlador.php">
+                        <input type="date" name="bday">
+                </form>
+                    <h3>Escoge la hora</h3>
+                <select>
+                    <option>10:00</option>
+                    <option>10:00</option>
+                    <option>10:00</option>
+                    <option>10:00</option>
+                </select>
+
+
+          </div>
+
    </body>
 </html>							
