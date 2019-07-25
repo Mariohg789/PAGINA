@@ -8,7 +8,7 @@
 	<BODY>
 		<?php
 			require 'FuncionesBD.php';
-
+			require '../ControladorSession.php'
 
 			if (isset($_POST['btnLogin'])) {
 				$correo = $_POST['txtUserName'];
