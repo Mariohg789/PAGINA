@@ -3,7 +3,7 @@ function campoVaciosLogin()
     {
         var usuarioLogin= document.getElementById(" ").value; 
         var coLogin= document.getElementById(" ").value; 
-        if(usuarioLogin==="" && coLogin=="")
+        if(usuarioLogin==="" && coLogin==="")
         {
            // alert("Campo vacio: escribe un usuario");
            Swal.fire('Campo vacío','Ingresa un Usuario y una Contraseña','question');
@@ -14,6 +14,7 @@ function campoVaciosLogin()
            // alert("Campo vacio: escribe un usuario");
            SSwal.fire('Campo vacío','Ingresa una contraseña','question');
             return false; 
+
         }
         if(coLogin==="")
         {
