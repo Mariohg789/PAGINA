@@ -7,7 +7,7 @@ function resgitroCliente()
     title: 'Usuario registrado',
     showConfirmButton: false,
     timer: 2000
-  }).then(function(){window.location="#"})
+  }).then(function(){window.location="../VehiculoInterfaz/vehiculo.php"})
 }
 //Error de cliente*
 function errorCliente()
@@ -15,10 +15,10 @@ function errorCliente()
   Swal.fire({
     position: 'top',
     type: 'error',
-    title: 'el usuario y/o contraseña son incorrectos',
+    title: 'el usuario ya existe favor de verificar',
     showConfirmButton: false,
     timer: 2000
-  }).then(function(){window.location=""})
+  }).then(function(){window.location="../RegistroUsuario/Registro.html"})
 }
 //Bienvenido *
 function bienvenido()
@@ -29,19 +29,20 @@ function bienvenido()
     title: 'Bienvenido',
     showConfirmButton: false,
     timer: 2000
-  }).then(function(){window.location="../MenuLoggeado/IndexLogeado.html"})
+  }).then(function(){window.location="../Menuloggeado/indexLogeado.php"})
 
 } 
-//Error al entrada *
+/*Error de datos**/
 function erroLogin()
 {
     Swal.fire('MARVAN MECHANIC´S',
      'Tu usuario y/o contraseña no validos', 
      'error').then(function()
-     {window.location="../Menu Principal/Index.html"});
+     {window.location="../LoginOmar/Login.html"});
 
 }
-//Modificar Datos 
+ 
+/*Modificar Dato*/
 function modificarDato()
 {
   Swal.fire({
@@ -81,6 +82,26 @@ function errorReserva()
     'error'
   )
 }
-//Prueba Andy :3 
 
+//Registro vehiculo
+function resgitroVehiculo()
+{
+  Swal.fire({
+    position: 'top',
+    type: 'success',
+    title: 'Vehiculo registrado',
+    showConfirmButton: false,
+    timer: 2000
+  }).then(function(){window.location="../MenuLoggeado/indexLogeado.php"})
+}
 
+function errorVehiculo()
+{
+  Swal.fire({
+    position: 'top',
+    type: 'error',
+    title: 'el vehiculo ya existe favor de verificar',
+    showConfirmButton: false,
+    timer: 2000
+  }).then(function(){window.location="../VehiculoInterfaz/vehiculo.php"})
+}

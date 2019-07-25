@@ -19,12 +19,12 @@
 					$correoValidado=buscarCorreo($correo);
 					$sesion=iniciarSesion($correoValidado);
 					echo '<script> alert("Bienvenido");</script>' ;
-					echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= ../MenuLoggeado/indexLogeado.php'>";
+		
 					
 				}
 				else
 				{
-					echo '<script> alert("Error al regresar");</script>' ;	
+					echo '<script> erroLogin();</script>';	
 				}
 				
 							
