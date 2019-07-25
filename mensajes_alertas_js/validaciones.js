@@ -3,7 +3,11 @@ function campoVaciosLogin()
     {
         var usuarioLogin= document.getElementById(" ").value; 
         var coLogin= document.getElementById(" ").value; 
+<<<<<<< HEAD
         if(usuarioLogin==="" && coLogin==="")
+=======
+        if(usuarioLogin==="" && coLogin=="")
+>>>>>>> 2ad70ff0f99918895e8c497d6db5cd3393c7601d
         {
            // alert("Campo vacio: escribe un usuario");
            Swal.fire('Campo vacío','Ingresa un Usuario y una Contraseña','question');
@@ -98,7 +102,11 @@ function campoVaciosRegistroUsuario()
 			return 0;
 		}
 		//PLACA
+<<<<<<< HEAD
 		if(campoVacioPlaca==="")
+=======
+		if(campoVacioPlaca=="")
+>>>>>>> 2ad70ff0f99918895e8c497d6db5cd3393c7601d
 		{
 			Swal.fire('Campo vacío','Ingresa una placa','question');
 			return 0;
@@ -180,7 +188,11 @@ function campoVaciosRegistroUsuario()
 			Swal.fire('No hay datos!','Selecciona los datos correspondientes','warning');
 			return 0;
 		}
+<<<<<<< HEAD
 		//FECHA 
+=======
+		//FECHA
+>>>>>>> 2ad70ff0f99918895e8c497d6db5cd3393c7601d
 		if(campoVacioFecha==="")
 		{
 			Swal.fire('Campo vacío','Ingresa una Fecha','question');
@@ -274,6 +286,7 @@ function campoVaciosRegistroUsuario()
 			return 0;
 		}
 	}
+<<<<<<< HEAD
 		
 		
 		
@@ -282,3 +295,6 @@ function campoVaciosRegistroUsuario()
 		
 	
 	
+=======
+		
+>>>>>>> 2ad70ff0f99918895e8c497d6db5cd3393c7601d

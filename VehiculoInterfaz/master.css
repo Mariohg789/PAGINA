@@ -1,6 +1,7 @@
 body {
   font-family: 'open sans';
   background: var(--fondo);
+  padding-top: 0%;
 }
 
 
@@ -78,6 +79,7 @@ nav{
   width: 100%;
   position: fixed;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+  
 }
 .GifCarro{
   width: 60px;

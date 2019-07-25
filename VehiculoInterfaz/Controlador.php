@@ -2,6 +2,8 @@
 
 <html>
 	<head>...</head>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="../mensajes_alertas_js/mensajes.js"></script>
 	<BODY>
 		<?php
 			require 'FuncionesBD.php';
@@ -17,11 +19,11 @@
 			if (validarVehiculo($numeroSerie) != $numeroSerie) 
 			{
 				insertarUsuario($numeroSerie,$modelo,$anio,$marca,$version,$placas);
+				echo '<script>resgitroVehiculo();</script>' ;
 			}
 			else
 			{
-				echo '<script> alert("Este Vehiculo ya esta registrado");</script>' ;
-				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>"; 
+				echo '<script> errorVehiculo();</script>' ; 
 			}
 		
 		}
