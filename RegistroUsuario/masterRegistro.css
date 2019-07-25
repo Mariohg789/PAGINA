@@ -8,7 +8,7 @@ body{
     }
 .registro{
     width: 320px; 
-    height: 600px;
+    height: 700px;
     /*Borde redondeado*/
     border-radius: 28px 28px 28px 28px;
     -moz-border-radius: 28px 28px 28px 28px;
@@ -26,8 +26,11 @@ body{
     position: absolute  ; 
     transform: translate(-50%, -50%); /* equis, y*/
     box-sizing: border-box;
-    padding: 70px 30px; 
-    background-position: stikic;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-position: sticky;
 }
 .registro h1 {
     margin: 0;

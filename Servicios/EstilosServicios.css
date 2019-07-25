@@ -99,24 +99,29 @@ header{
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+ 
+
 }
 
 nav{
   width: 100%;
   position: fixed;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+
 }
 
 .nav1{
   background-color: #A9A9A9;
   height: 80px;
   color:#fff;
+
 }
 
 .nav2{
   background: var(--fondo);
   height:100px;
   color:#000;
+
 }
 
 .contenedor-nav{
@@ -129,6 +134,7 @@ nav{
   max-width:1000px;
   height:inherit;
   overflow: hidden;
+  
 }
 
 nav .enlaces a{
@@ -444,10 +450,10 @@ footer p{
   }
 }
 
-
 .hvrbox,
 .hvrbox * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  
 }
 .hvrbox {
 	position: relative;
