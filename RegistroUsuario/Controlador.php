@@ -9,6 +9,7 @@
 			$nombre = $_POST['txtNombre'];
 			$apellido = $_POST['txtApellido'];
 			$contrasena = $_POST['txtContrasena'];
+			$contrasenaEncriptada = password_hash($contrasena,PASSWORD_DEFAULT);
 			$direccion = $_POST['txtDireccion'];
 			$telefono = $_POST['txtTelefono'];
 			$correo = $_POST['txtCorreo'];
@@ -18,7 +19,7 @@
 
 			if (validarUsuarioCorreo($correo) != $correo) 
 			{
-				insertarUsuario($nombre,$apellido,$contrasena,$direccion,$correo,$telefono,$estado,$status);
+				insertarUsuario($nombre,$apellido,$contrasenaEncriptada,$direccion,$correo,$telefono,$estado,$status);
 			}
 			else
 			{
