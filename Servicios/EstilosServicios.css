@@ -431,28 +431,55 @@ footer p{
 }
 
 .botonLlanta{
+  
   position: absolute;
+  text-align: center;
   margin: auto;
   /*width: 262px;*/
-  width: 311px;
+  width: 511px;
   display: block; 
   background-color: #a4a8a4;
   height: 30px;
   color: black;
   border-block-end-style: solid;
   border-radius: 8px;
+  margin-left: 150px;
 }
 
-@media only screen and (max-width: 1200px){
-
-  .botonLlanta{
-    width: 262px;
+@media only screen and (max-width: 1500px){
+  .hvrbox * {
+    
+    
+    width: 100px;
+    
   }
+ .paquetesArribaIzquierda{
+
+  width: 25%;
+    
+}
+.paquetesArribaDerecha{
+
+  width: 25%;
+}
+
+.paquetesAbajoIzquierda{
+
+  width: 25%;
+}
+.paquetesAbajoDerecha{
+
+  width: 25%;
+  
+}
+  
 }
 
 .hvrbox,
 .hvrbox * {
   box-sizing: border-box;
+  
+  width: 400px;
   
 }
 .hvrbox {
@@ -514,4 +541,78 @@ footer p{
 	display: block;
 }
 
+
+.paquetesArribaIzquierda{
+
+    height: 650px;
+    width: 50%;
+    margin-top: -450px;
+    justify-content: space-between;
+    padding: 50px;   
+}
+.paquetesArribaDerecha{
+
+  height: 650px;
+  width: 50%;
+  margin-top: -650px;
+  justify-content: space-between;
+  margin-left: 50%;
+
+  padding: 50px;
+  
+}
+
+.paquetesAbajoIzquierda{
+
+  height: 650px;
+  width: 50%;
+  justify-content: space-between;
+  padding: 50px;
+  
+}
+.paquetesAbajoDerecha{
+
+height: 650px;
+width: 50%;
+margin-top: -650px;
+justify-content: space-between;
+margin-left: 50%;
+
+padding: 50px;
+
+}
+
+.paquetesArribaIzquierda h1{
+
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+.paquetesArribaDerecha h1{
+
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+.paquetesAbajoIzquierda h1{
+
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+.paquetesAbajoDerecha h1{
+
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+
+.paquetesTodos{
+  
+  margin-bottom: 700px;
+}
+
+.bateriaImagen{
+  width: 900000px;
+}
 
