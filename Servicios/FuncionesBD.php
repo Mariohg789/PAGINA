@@ -11,6 +11,12 @@
     {
         $conexion = conectarBD();
         $query = "SELECT Descripcion FROM Servicio WHERE idPaquete = ? "
-        $statement = sqlsrv_querry($conexion,$query,$pIDServicio);        
+        $statement = sqlsrv_querry($conexion,$query,$pIDServicio); 
+        try {
+            return $statement; 
+        } catch (Exception $e) {
+            
+        }
+             
     }
 ?>
