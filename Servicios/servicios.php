@@ -46,11 +46,7 @@
                                     <div class="hvrbox">
                                         <img src="img/cambioLlanta.jpg"  class="hvrbox-layer_bottom" name="layerPaquete1" >
                                         <div class="hvrbox-layer_top">
-                                            <div class="hvrbox-text"><?php
-                                                require 'Controlador.php'
-                                                $desc = $descripcion;
-                                                echo $desc;
-                                               ?></div>
+                                            <div class="hvrbox-text">AQUI VA TEXTO</div>
                                         </div>
                                     </div>
                         </div>

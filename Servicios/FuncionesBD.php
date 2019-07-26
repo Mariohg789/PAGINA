@@ -7,16 +7,16 @@
 		return $conexion;
     }
     
-    function consultaEspecializada($pIDServicio)
+    /*function consultaEspecializada($pIDServicio)
     {
         $conexion = conectarBD();
-        $query = "SELECT Descripcion FROM Servicio WHERE idPaquete = ? "
-        $statement = sqlsrv_querry($conexion,$query,$pIDServicio); 
+        $query = "SELECT Descripcion FROM Servicio WHERE idPaquete = ? ";
+        $parametros = array($pIDServicio);
+        $statement = sqlsrv_query($conexion,$query,$parametros); 
         try {
             return $statement; 
         } catch (Exception $e) {
             
         }
-             
-    }
+    }*/
 ?>
