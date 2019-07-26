@@ -3,7 +3,7 @@
 	function conectarBD()
 	{
 		$servername = "NAVA-LAPTOP";
-		$conexionInfo = array("DataBase"=>"MarvanMechanics", "UID"=>"sa", "PWD"=>"8550");
+		$conexionInfo = array("DataBase"=>"MarvanMecanics", "UID"=>"sa", "PWD"=>"8550");
 		$conexion = sqlsrv_connect($servername,$conexionInfo);
 		return $conexion;
 	}
@@ -12,7 +12,7 @@
 	{
 		$conexion = conectarBD();
 		$insert = "insert into Cliente values (?,?,?,?,?,?,?,?)";
-		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pstatus);
+		$parametros=array($pNombre,$pApellido,$pContrasena,$pDireccion,$pCorreo,$pTelefono,$pEstado,$pEstatus);
 		$statement = sqlsrv_query($conexion,$insert,$parametros);
 		try {
 
@@ -24,12 +24,12 @@
 			else
 			{
 				echo '<script> alert("Error");</script>' ;
-				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>"; 
+				echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>"; 
 			}
 			
 		} catch (Exception $e) {
 			echo '<script> alert("Fatal Error");</script>' ;
-			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='2 ; URL= Registro.html'>";
+			echo "<META HTTP-EQUIV = 'REFRESH' CONTENT='0 ; URL= Registro.html'>";
 		}
 		
 		return 1;

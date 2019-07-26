@@ -11,6 +11,7 @@
 			$nombre = $_POST['txtNombre'];
 			$apellido = $_POST['txtApellido'];
 			$contrasena = $_POST['txtContrasena'];
+			$contrasenaEncriptada = password_hash($contrasena,PASSWORD_DEFAULT);
 			$direccion = $_POST['txtDireccion'];
 			$telefono = $_POST['txtTelefono'];
 			$correo = $_POST['txtCorreo'];
@@ -20,8 +21,12 @@
 
 			if (validarUsuarioCorreo($correo) != $correo) 
 			{
+<<<<<<< HEAD
 				insertarUsuario($nombre,$apellido,$contrasena,$direccion,$correo,$telefono,$estado,$status);
 				echo'<script>resgitroCliente();</script>';
+=======
+				insertarUsuario($nombre,$apellido,$contrasenaEncriptada,$direccion,$correo,$telefono,$estado,$status);
+>>>>>>> ba8b44e58268f2e63f967627a8d294e2a22b4596
 			}
 			else
 			{
