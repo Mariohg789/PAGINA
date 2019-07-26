@@ -44,14 +44,19 @@
                             <div class="img-work">
         
                                     <div class="hvrbox">
-                                        <img src="img/cambioLlanta.jpg"  class="hvrbox-layer_bottom" name="layerPaquete1" >
+                                        <img src="img/cambioLlanta.jpg"  class="hvrbox-layer_bottom" >
                                         <div class="hvrbox-layer_top">
-                                            <div class="hvrbox-text">AQUI VA TEXTO</div>
+                                            <div class="hvrbox-text">
+                                                El paquete Express contine los servicios: 
+                                                Cambio de aceite y filtro, 
+                                                Remplazo de focos exteriores, 
+                                                Cambio de llantas.
+                                            </div>
                                         </div>
                                     </div>
                         </div>
                             <div class="textos-work">
-                                <h4>Cambio de llantas</h4>
+                                <h4>Paquete Express</h4>
                             </div>
                             <input type="button" value="Reservame" class = "botonLlanta" name="btnPaquete1" >
                             
@@ -61,12 +66,17 @@
                                     <div class="hvrbox">
                                         <img src="img/cambioAceite.jpg"  class="hvrbox-layer_bottom">
                                         <div class="hvrbox-layer_top">
-                                            <div class="hvrbox-text">Aqui va la descripcion que vam a extraer de la base de datos</div>
+                                            <div class="hvrbox-text">
+                                                El paquete Diagnostico contine los servicios: 
+                                                Diagnostico y cambio de batería, 
+                                                Cambio fitro de aire y 
+                                                Remplazo de plumas del limpia parabrisas.
+                                            </div>
                                         </div>
                                     </div>
                             </div>
                             <div class="textos-work">
-                                <h4>Cambio de aceite</h4>
+                                <h4>Paquete Diagnostico</h4>
                             </div>
                             <input type="button" value="Reservame" class = "botonLlanta">
                         </div>
@@ -76,13 +86,18 @@
                                     <div class="hvrbox">
                                         <img src="img/lavadoMotor.jpg"  class="hvrbox-layer_bottom">
                                         <div class="hvrbox-layer_top">
-                                            <div class="hvrbox-text">Aqui va la descripcion que vam a extraer de la base de datos</div>
+                                            <div class="hvrbox-text">
+                                                El paquete Básico contine los servicios: 
+                                                Cambio de llantas, 
+                                                Remplazo de focos exteriores, 
+                                                Cambio de llantas.
+                                            </div>
                                         </div>
                                     </div>                
                             </div>
                             
                             <div class="textos-work">
-                                <h4>Lavado de motor</h4>
+                                <h4>Paquete Básico</h4>
                             </div>
                             <input type="button" value="Reservame" class = "botonLlanta">
                         </div>
@@ -91,13 +106,20 @@
                                     <div class="hvrbox">
                                         <img src="img/alineacion.jpg"  class="hvrbox-layer_bottom">
                                         <div class="hvrbox-layer_top">
-                                            <div class="hvrbox-text">Aqui va la descripcion que vam a extraer de la base de datos</div>
+                                            <div class="hvrbox-text">
+                                                El paquete Premium contine los servicios: 
+                                                Cambio de aceite, 
+                                                Alineacion y balanceo y 
+                                                Cambio de llantas, 
+                                                Remplazo de plumas de limpia parabrisas y 
+                                                Diagnostico y cambio de batería.
+                                            </div>
                                         </div>
                                     </div>
                                                         
                             </div>
                             <div class="textos-work">
-                                <h4>Alineacion</h4>
+                                <h4>Paquete Premium</h4>
                             </div>
                             <input type="button" value="Reservame" class = "botonLlanta">
                         </div>
