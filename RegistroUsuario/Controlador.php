@@ -21,12 +21,8 @@
 
 			if (validarUsuarioCorreo($correo) != $correo) 
 			{
-<<<<<<< HEAD
-				insertarUsuario($nombre,$apellido,$contrasena,$direccion,$correo,$telefono,$estado,$status);
-				echo'<script>resgitroCliente();</script>';
-=======
 				insertarUsuario($nombre,$apellido,$contrasenaEncriptada,$direccion,$correo,$telefono,$estado,$status);
->>>>>>> ba8b44e58268f2e63f967627a8d294e2a22b4596
+				echo '<script>resgitroCliente();</script>';
 			}
 			else
 			{
