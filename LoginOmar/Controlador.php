@@ -19,8 +19,6 @@
 					$correoValidado=buscarCorreo($correo);
 					$sesion=iniciarSesion($correoValidado);
 					echo '<script> bienvenido();</script>' ;
-		
-					
 				}
 				else
 				{
