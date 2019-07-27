@@ -14,13 +14,11 @@
 				$correo = $_POST['txtUserName'];
 				$password = $_POST['txtPassword'];
 			
-				if(array($correo,$password) == validarUsuario($correo)) 
+				if(password_verify($password,validarUsuario($correo))) 
 				{
 					$correoValidado=buscarCorreo($correo);
 					$sesion=iniciarSesion($correoValidado);
-					echo '<script> alert("Bienvenido");</script>' ;
-		
-					
+					echo '<script> bienvenido();</script>' ;
 				}
 				else
 				{
