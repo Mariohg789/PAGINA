@@ -3,7 +3,7 @@
 	function conectarBD()
 	{
 		$servername = "NAVA-LAPTOP";
-		$conexionInfo = array("DataBase"=>"MarvanMechanics", "UID"=>"sa", "PWD"=>"8550");
+		$conexionInfo = array("DataBase"=>"MarvanMecanics", "UID"=>"sa", "PWD"=>"8550");
 		$conexion = sqlsrv_connect($servername,$conexionInfo);
 		return $conexion;
 	}

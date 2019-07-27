@@ -66,15 +66,12 @@ body{
   .logo, .logo img{ 
     height:80px;}
 
-
-
-
 .contenedorPrincipal{
   margin-top: -400px;
   margin-left: 220px;
   position: center;
   background-color: #1498a4;
-  width: 500px;
+  width: 800px;
   height: 350;
   padding-left: 10px;
   border-radius: 16px;
@@ -86,4 +83,16 @@ body{
 
 .contenedorPrincipal input .txtServicio{
   width: 2000px;
+}
+
+
+.Mapa{
+
+  margin-top: -320px;
+  margin-left: 600px;
+  position: absolute;
+  width: 500px;
+  height: 350;
+  padding-left: 10px;
+  border-radius: 16px;
 }
