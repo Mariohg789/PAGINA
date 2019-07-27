@@ -422,7 +422,7 @@ footer p{
 .textoHeader{
   -webkit-flex: none;
   flex: none;
-  width: 40px;
+  width: 50px;
 }
 .dropbtn {
   background-color: #A9A9A9;
