@@ -16,8 +16,8 @@
         if (!isset($_SESSION["SesionActiva"])) {
            
             header("Location: ../Menu Principal/Index.html"); 
+            
         }
-        
     ?>
 
 <body class="hidden">

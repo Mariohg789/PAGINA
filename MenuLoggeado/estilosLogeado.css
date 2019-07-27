@@ -420,8 +420,9 @@ footer p{
   }
 }
 .textoHeader{
-  position: absolute;
-  left: 1490px;
+  -webkit-flex: none;
+  flex: none;
+width: 50px;
 }
 .dropbtn {
   background-color: #A9A9A9;
@@ -432,7 +433,8 @@ footer p{
 }
 
 .dropdown {
-  position: relative;
+  -webkit-flex: 2;
+  flex: 2;
   display: inline-block;
 }
 
